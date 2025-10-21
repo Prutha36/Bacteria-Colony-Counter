@@ -3,7 +3,7 @@ import cv2
 import numpy as np
 from PIL import Image
 
-st.title("🧫 Bacteria Colony Counter")
+st.title(" Bacteria Colony Counter")
 
 uploaded_file = st.file_uploader("Upload an image of the Petri dish", type=["jpg", "jpeg", "png"])
 
@@ -36,6 +36,6 @@ if uploaded_file is not None:
     cv2.drawContours(result, filtered_contours, -1, (255,0,0), 2)
 
     st.image(result, caption=f"Detected Colonies: {colony_count}", use_column_width=True)
-    st.success(f"✅ Estimated number of colonies: {colony_count}")
+    st.success(f" Estimated number of colonies: {colony_count}")
     
 
